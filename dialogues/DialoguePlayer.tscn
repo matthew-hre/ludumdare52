@@ -1,0 +1,55 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/diagTMP.png" type="Texture" id=1]
+[ext_resource path="res://dialogues/DialoguePlayer.gd" type="Script" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 216, 40 )
+
+[node name="DialoguePlayer" type="CanvasLayer"]
+script = ExtResource( 2 )
+dialogue_file = "res://dialogues/jsons/npc.json"
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+visible = false
+margin_left = 464.0
+margin_top = 616.0
+margin_right = 896.0
+margin_bottom = 696.0
+texture = ExtResource( 1 )
+patch_margin_left = 10
+patch_margin_top = 9
+patch_margin_right = 8
+patch_margin_bottom = 9
+
+[node name="Message" type="RichTextLabel" parent="NinePatchRect"]
+margin_left = 24.0
+margin_top = 40.0
+margin_right = 424.0
+margin_bottom = 72.0
+text = "Message"
+
+[node name="Name" type="RichTextLabel" parent="NinePatchRect"]
+margin_left = 8.0
+margin_top = 8.0
+margin_right = 136.0
+margin_bottom = 24.0
+text = "Name"
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2( 440, 608 )
+z_index = 10
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 240, 48 )
+z_index = 2
+shape = SubResource( 1 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.4
+one_shot = true
+
+[connection signal="gui_input" from="NinePatchRect/Message" to="." method="_on_gui_input"]
+[connection signal="gui_input" from="NinePatchRect/Name" to="." method="_on_gui_input"]
+[connection signal="input_event" from="Area2D" to="." method="_on_Area2D_input_event"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
