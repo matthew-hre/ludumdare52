@@ -13,9 +13,11 @@ func _input(event):
 		if event.button_index == BUTTON_LEFT:
 			if event.is_pressed():
 				print(event.position)
-				if event.position.x < screen_width/4:
+				print(screen_width/6)
+				if event.position.x < 256:
 					var result = get_tree().change_scene_to(load("res://scenes/Table.tscn"))
 					result = result
-				elif event.position.x > (screen_width*3)/4:
+				elif event.position.x > (screen_width - 256):
 					var result = get_tree().change_scene_to(load("res://scenes/Witnesses.tscn"))
 					result = result
+					
