@@ -1,20 +1,24 @@
 extends Node2D
 
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
+var screen_width = 0
 
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
-
+	screen_width = get_viewport().size.x
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
 
 
-func _on_Button_pressed():
-	get_tree().change_scene_to(load("res://scenes/Main.tscn"))
+func _input(event):
+	if event is InputEventMouseButton:
+		if event.button_index == BUTTON_LEFT:
+			if event.is_pressed():
+				print(event.position)
+				if event.position.x < screen_width/4:
+					var result = get_tree().change_scene_to(load("res://scenes/Main.tscn"))
+					result = result
+
