@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/diagTMP.png-79654de912ea3cecf725603e5c641133.stex"
+path="res://.import/textbox.png-d6c24738881ee746f8b556a776544dcb.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/diagTMP.png"
-dest_files=[ "res://.import/diagTMP.png-79654de912ea3cecf725603e5c641133.stex" ]
+source_file="res://assets/textbox.png"
+dest_files=[ "res://.import/textbox.png-d6c24738881ee746f8b556a776544dcb.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

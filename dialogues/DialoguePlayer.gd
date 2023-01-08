@@ -66,7 +66,7 @@ func _on_gui_input(event):
 
 
 
-func _on_Area2D_input_event(viewport, event, shape_idx):
+func _on_Area2D_input_event(event):
 	if event is InputEventMouseButton and event.pressed and event.button_index == BUTTON_LEFT:
 		print("test")
 		next_line()
