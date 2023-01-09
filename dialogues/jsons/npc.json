@@ -24,6 +24,9 @@
     "name": "Player",
     "text": "Yea, I know, but I have my hammer with me.",
     "pfp": "res://assets/pfp2TMP.png",
+    "option1": "test1",
+    "option2": "test2",
+    "option3": "test3",
     "option1Response": "I'll take that sword to stabby stab!",
     "option2Response": "Guns are cool",
     "option3Response": "I'll take this trusty hammer"
