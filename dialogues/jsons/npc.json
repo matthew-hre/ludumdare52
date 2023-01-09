@@ -1,7 +1,39 @@
 [
-  {"name": "NPC", "text": "Hello stranger!"},
-  {"name": "Player", "text": "Hello bigger stranger!"},
-  {"name": "NPC", "text": "It's dangerous to go alone."},
-  {"name": "Player", "text": "Yea, I know, but I have my hammer with me."},
-  {"name": "NPC", "text": "Ah, ok. Have a nice trip!"}
+  {
+    "name": "NPC",
+    "text": "Hello stranger!",
+    "pfp": "res://assets/pfp1TMP.png",
+    "option3Picked": "You're a brave one", 
+    "option2Picked": "Enjoy your gun",
+    "option1Picked": "Don't cut yourself"
+  },
+  {
+    "name": "Player",
+    "text": "Hello bigger stranger!",
+    "pfp": "res://assets/pfp2TMP.png"
+  },
+  {
+    "name": "NPC",
+    "text": "It's dangerous to go alone. Take one of these",
+    "pfp": "res://assets/pfp1TMP.png",
+    "option1": "A mighty sword to slay the lizard cops",
+    "option2": "a gun to go bang bang",
+    "option3": "A hammer"
+  },
+  {
+    "name": "Player",
+    "text": "Yea, I know, but I have my hammer with me.",
+    "pfp": "res://assets/pfp2TMP.png",
+    "option1Response": "I'll take that sword to stabby stab!",
+    "option2Response": "Guns are cool",
+    "option3Response": "I'll take this trusty hammer"
+  },
+  {
+    "name": "NPC",
+    "pfp": "res://assets/pfp1TMP.png",
+    "text": "Ah, ok. Have a nice trip!",
+    "option1Response": "You're a brave one",
+    "option2Response": "You're a brave one",
+    "option3Response": "You're a brave one"
+  }
 ]

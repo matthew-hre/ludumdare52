@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/textbox.png-d6c24738881ee746f8b556a776544dcb.stex"
+path="res://.import/pfp1TMP.png-afb49adfb7d744584e988ab8720c5472.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/textbox.png"
-dest_files=[ "res://.import/textbox.png-d6c24738881ee746f8b556a776544dcb.stex" ]
+source_file="res://assets/pfp1TMP.png"
+dest_files=[ "res://.import/pfp1TMP.png-afb49adfb7d744584e988ab8720c5472.stex" ]
 
 [params]
 
