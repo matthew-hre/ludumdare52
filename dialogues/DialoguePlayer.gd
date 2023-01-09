@@ -6,6 +6,8 @@ var dialogues = []
 var current_dialogue_id = 0
 var is_dialogue_active = false
 
+var selection = [];
+
 var option1 = false;
 var option2 = false;
 var option3 = false;
@@ -17,6 +19,7 @@ func _ready():
 	$Option3.visible = false
 	
 func play():
+	print(selection)
 	if is_dialogue_active:
 		return
 
@@ -127,17 +130,20 @@ func _on_Area2D_input_event(_viewport:Node, event:InputEvent, _shape_idx:int):
 func _on_Option3_gui_input(event:InputEvent):
 	if event is InputEventMouseButton and event.pressed and event.button_index == BUTTON_LEFT:
 		print("Option 3")
+		selection.append(3)
 		option3 = true
 		next_line()
 
 func _on_Option2_gui_input(event:InputEvent):
 	if event is InputEventMouseButton and event.pressed and event.button_index == BUTTON_LEFT:
 		print("Option 2")
+		selection.append(2)
 		option2 = true
 		next_line()
 
 func _on_Option1_gui_input(event:InputEvent):
 	if event is InputEventMouseButton and event.pressed and event.button_index == BUTTON_LEFT:
 		print("Option 1")
+		selection.append(1)
 		option1 = true
 		next_line()
